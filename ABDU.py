@@ -38,7 +38,8 @@ def process_orders(item_quantities, orders): #define order processing function, 
         print(f"Remaining quantities after {order}: {remaining_quantities}")
 
     print(f"\nFinal remaining quantities: {remaining_quantities}")
-    print(f"Quantities selected in each order: {selected_quantities_per_order}")
+    #print(f"\nQuantities selected in each order: {selected_quantities_per_order}")
+    return selected_quantities_per_order
 
 # Example usage:
 item_quantities_available = {'A': 10, 'B': 20, 'C': 10, 'D': 5}
@@ -49,4 +50,6 @@ order_dict = {
     "Order4": 0
 }
 
-process_orders(item_quantities_available, order_dict)
+results = process_orders(item_quantities_available, order_dict)
+
+#print(results)
