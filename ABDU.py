@@ -42,13 +42,13 @@ def process_orders(item_quantities, orders): #define order processing function, 
     return selected_quantities_per_order
 
 # Example usage:
-item_quantities_available = {'A': 10, 'B': 20, 'C': 10, 'D': 5}
-order_dict = {
-    "Order1": 0,  # Initial values can be set to 0; the user will select the item and quantity
-    "Order2": 0,
-    "Order3": 0,
-    "Order4": 0
-}
+#item_quantities_available = {'A': 10, 'B': 20, 'C': 10, 'D': 5}
+#order_dict = {
+    #"Order1": 0,  # Initial values can be set to 0; the user will select the item and quantity
+   # "Order2": 0,
+   # "Order3": 0,
+   # "Order4": 0
+#}
 
 #results = process_orders(item_quantities_available, order_dict)
 
