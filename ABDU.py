@@ -50,6 +50,6 @@ order_dict = {
     "Order4": 0
 }
 
-results = process_orders(item_quantities_available, order_dict)
+#results = process_orders(item_quantities_available, order_dict)
 
 #print(results)
