@@ -29,7 +29,8 @@ def control_gpio_pins(order_items):
                 GPIO.output(pin, GPIO.HIGH)
                 print(f"Setting GPIO pin {pin} high for candy {candy}")
                 #wait for short duration
-                time.sleep(0.5)
+                time.sleep(.1)
                 #set gpio pin low
                 GPIO.output(pin,GPIO.LOW)
+                time.sleep(.1)
                 print(f'Setting GPIO pin {pin} low for candy {candy}')
