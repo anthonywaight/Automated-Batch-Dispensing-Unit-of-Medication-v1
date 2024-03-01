@@ -14,7 +14,7 @@ def send_order(order_data):
         for item, quantity in items:
             # Encode item and quantity
             encoded_data = (ord(item) - ord('A')) << 4 | quantity
-
+            print(bin(encoded_data)[2:].zfill(8)) #print binary just to see
             # Send the data over I2C
             bus.write_byte(i2c_address, encoded_data)
 
